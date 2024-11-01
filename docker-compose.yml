@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    container_name: html
+    volumes:
+      - ./html:/usr/share/nginx/html
+    ports:
+      - "0.0.0.0:443:80"
